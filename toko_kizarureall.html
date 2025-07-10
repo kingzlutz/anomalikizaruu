@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOKO KIZARUREALL</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+        header { background: #222; color: #fff; padding: 20px; text-align: center; }
+        .container { padding: 20px; max-width: 900px; margin: auto; }
+        .product { background: white; padding: 15px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 0 5px #ccc; }
+        .product h3 { margin: 0 0 10px 0; }
+        .product button { background: #25D366; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
+        .product button:hover { background: #128C7E; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TOKO KIZARUREALL</h1>
+    <p>Kontak Admin: 089512593943 (DANA Only)</p>
+</header>
+
+<div class="container">
+
+    <div class="product">
+        <h3>BOT PUSHKONTAK</h3>
+        <p>Harga: Rp10.000</p>
+        <button onclick="checkout('BOT PUSHKONTAK', '10000')">Beli Sekarang</button>
+    </div>
+
+    <div class="product">
+        <h3>BOT JAGA GRUB</h3>
+        <p>Harga: Rp8.000</p>
+        <button onclick="checkout('BOT JAGA GRUB', '8000')">Beli Sekarang</button>
+    </div>
+
+    <div class="product">
+        <h3>PANEL 1-UNLI</h3>
+        <p>Harga: Rp7.000</p>
+        <button onclick="checkout('PANEL 1-UNLI', '7000')">Beli Sekarang</button>
+    </div>
+
+    <div class="product">
+        <h3>ADMIN PANEL</h3>
+        <p>Harga: Rp15.000</p>
+        <button onclick="checkout('ADMIN PANEL', '15000')">Beli Sekarang</button>
+    </div>
+
+    <div class="product">
+        <h3>PT PANEL</h3>
+        <p>Harga: Rp20.000</p>
+        <button onclick="checkout('PT PANEL', '20000')">Beli Sekarang</button>
+    </div>
+
+    <div class="product">
+        <h3>OWNER PANEL</h3>
+        <p>Harga: Rp25.000</p>
+        <button onclick="checkout('OWNER PANEL', '25000')">Beli Sekarang</button>
+    </div>
+
+    <div class="product">
+        <h3>TANGAN KANAN PANEL</h3>
+        <p>Harga: Rp30.000</p>
+        <button onclick="checkout('TANGAN KANAN PANEL', '30000')">Beli Sekarang</button>
+    </div>
+
+    <div class="product">
+        <h3>TANGAN KIRI PANEL</h3>
+        <p>Harga: Rp35.000</p>
+        <button onclick="checkout('TANGAN KIRI PANEL', '35000')">Beli Sekarang</button>
+    </div>
+
+    <div class="product">
+        <h3>DEV PANEL</h3>
+        <p>Harga: Rp40.000</p>
+        <button onclick="checkout('DEV PANEL', '40000')">Beli Sekarang</button>
+    </div>
+
+</div>
+
+<script>
+    function checkout(product, price) {
+        const phone = "6289512593943";
+        const message = `Halo Admin, saya ingin membeli ${product} seharga Rp${price}. Saya akan bayar via DANA dan akan mengirimkan bukti transfer.`;
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+    }
+</script>
+
+</body>
+</html>
